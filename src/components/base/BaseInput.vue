@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="flex gap-3 ">
     <label :for="props.id">{{ props.label }}</label>
-    <input
+    <input class="border-1 rounded-lg p-1.5"
       :type="props.type"
       :id="props.id"
       :name="props.name"
