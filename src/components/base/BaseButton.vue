@@ -1,5 +1,5 @@
 <template>
-  <button @click="handleClick">
+  <button @click.prevent.stop="handleClick">
     <slot></slot>
   </button>
 </template>
@@ -13,8 +13,5 @@ const handleClick = () => {
 </script>
 
 <style scoped>
-button {
-  padding: 10px 20px;
-  cursor: pointer;
-}
+
 </style>

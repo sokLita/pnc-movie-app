@@ -5,13 +5,15 @@ import App from './App.vue'
 import router from './router'
 
 import BaseButton from './components/base/BaseButton.vue'
-// import BaseInput from './components/base/BaseInput.vue'
+import BaseInput from './components/base/BaseInput.vue'
+import BaseRadio from './components/base/BaseRadio.vue'
 
 const app = createApp(App)
 
 app.use(router)
 
-app.component('BaseButton', BaseButton)
-// app.component('BaseInput', BaseInput)
+app.component('base-button', BaseButton)
+app.component('base-input', BaseInput)
+app.component('base-radio', BaseRadio)
 
 app.mount('#app')
