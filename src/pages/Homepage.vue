@@ -22,6 +22,15 @@
 
     <p class="text-blue-500">{{ gender }}</p>
   </div>
+
+  <!-- checkbox -->
+   <base-checkbox name="interest" label="Football" id="football" value="football" v-model="interests"/>
+   <base-checkbox name="interest" label="Volleyball" id="bolleyball" value="volleyball" v-model="interests"/>
+   <base-checkbox name="interest" label="Cycling" id="cycling" value="cycling" v-model="interests"/>
+   <base-checkbox name="interest" label="Basketball" id="basketball" value="basketball" v-model="interests"/>
+    <p>Interest: {{ interests }}</p>
+
+
 </template>
 
 <script setup>
@@ -29,6 +38,7 @@ import { ref } from 'vue'
 const age = ref('');
 const username = ref('');
 const gender = ref('');
+const interests = ref([]);
 
 const test = () => {
   alert('Hello World')
